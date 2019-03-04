@@ -14,7 +14,7 @@ public class SimpleEmailController {
 
 	@RequestMapping("/sendEmail")
 	public ResponseEntity<?> sendEmail() {
-		emailService.sendSimpleMessage("chandushanmu01@gmail.com", "Mail from java Application through sendgrid",
+		emailService.sendSimpleMessage("chandushanmu01@gmail.com", "Mail from java Application through gmail",
 				"Hai,How R U??????");
 		return new ResponseEntity<>("mail sent successfully", HttpStatus.OK);
 	}
