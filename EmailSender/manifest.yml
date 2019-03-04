@@ -1,0 +1,7 @@
+---
+applications:
+- name: EmailSender
+  memory: 1024M
+  host: EmailSender
+  domain: cfapps.io
+  buildpack: java_buildpack
