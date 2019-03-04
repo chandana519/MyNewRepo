@@ -16,7 +16,7 @@ public class MimeEmailController {
 
 	@RequestMapping("/sendMailWithAttachment")
 	public ResponseEntity<?> sendMailWithAttachment() throws MessagingException {
-		emailService.sendMailWithAttachment("chandushanmu01@gmail.com", "Mail from java Application through sendgrid",
+		emailService.sendMailWithAttachment("chandushanmu01@gmail.com", "Mail from java Application",
 				"Hai,How R U??????","C:\\Users\\Chanti\\Desktop\\Resumes\\naukri\\Resume.docx");
 		return new ResponseEntity<>("mail sent successfully", HttpStatus.OK);
 	}
